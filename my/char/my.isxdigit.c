@@ -1,0 +1,27 @@
+/*
+** EPITECH PROJECT, 2024
+** LIBMY_MANAGER
+** File description:
+** my.isxdigit
+*/
+
+///////////////////////////////////////////////////////////////////////////////
+// Headers
+///////////////////////////////////////////////////////////////////////////////
+#include "my.h"
+
+///////////////////////////////////////////////////////////////////////////////
+/// \brief Check if a character is a hexadecimal digit.
+///
+/// \param ch       The character to check.
+///
+/// \return         TRUE if the character is a hexadecimal digit, FALSE
+///                 otherwise.
+///
+///////////////////////////////////////////////////////////////////////////////
+bool_t my_isxdigit(int ch)
+{
+    return (BOOL((ch >= '0' && ch <= '9')
+        || (ch >= 'a' && ch <= 'f')
+        || (ch >= 'A' && ch <= 'F')));
+}
