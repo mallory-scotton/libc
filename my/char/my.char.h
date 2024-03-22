@@ -1,0 +1,168 @@
+/*
+** EPITECH PROJECT, 2024
+** LIBMY_MANAGER
+** File description:
+** my.char
+*/
+
+#ifndef MY_CHAR_H_
+    #define MY_CHAR_H_
+
+///////////////////////////////////////////////////////////////////////////////
+//                               --------------
+//                                DEPENDENCIES
+//                               --------------
+///////////////////////////////////////////////////////////////////////////////
+    #include "my.h"
+
+///////////////////////////////////////////////////////////////////////////////
+//                                -----------
+//                                 FUNCTIONS
+//                                -----------
+///////////////////////////////////////////////////////////////////////////////
+
+///////////////////////////////////////////////////////////////////////////////
+/// \brief Check if a character is an alphanumeric character [a-Z0-9].
+///
+/// \param ch       The character to check.
+///
+/// \return         True if the character is alphanumeric, FALSE otherwise.
+///
+///////////////////////////////////////////////////////////////////////////////
+bool_t my_isalnum(int ch);
+
+///////////////////////////////////////////////////////////////////////////////
+/// \brief Check if a character is an alphabetic character [a-Z].
+///
+/// \param ch       The character to check.
+///
+/// \return         TRUE if the character is an alphabetic character, FALSE
+///                 otherwise.
+///
+///////////////////////////////////////////////////////////////////////////////
+bool_t my_isalpha(int ch);
+
+///////////////////////////////////////////////////////////////////////////////
+/// \brief Check if a character is a control character.
+///
+/// \param ch       The character to check.
+///
+/// \return         TRUE if the character is a control character, FALSE.
+///                 otherwise.
+///
+///////////////////////////////////////////////////////////////////////////////
+bool_t my_iscntrl(int ch);
+
+///////////////////////////////////////////////////////////////////////////////
+/// \brief Check if a character is a digit [0-9].
+///
+/// \param ch       The character to check.
+///
+/// \return         TRUE if the character is a digit, FALSE otherwise.
+///
+///////////////////////////////////////////////////////////////////////////////
+bool_t my_isdigit(int ch);
+
+///////////////////////////////////////////////////////////////////////////////
+/// \brief Check if a character is a graphical character (printable and not a
+///        space).
+///
+/// \param ch       The character to check.
+///
+/// \return         TRUE if the character is a graphical character, FALSE
+///                 otherwise.
+///
+///////////////////////////////////////////////////////////////////////////////
+bool_t my_isgraph(int ch);
+
+///////////////////////////////////////////////////////////////////////////////
+/// \brief Check if a character is a lowercase letter.
+///
+/// \param ch       The character to check.
+///
+/// \return         TRUE if the character is a lowercase letter, FALSE
+///                 otherwise.
+///
+///////////////////////////////////////////////////////////////////////////////
+bool_t my_islower(int ch);
+
+///////////////////////////////////////////////////////////////////////////////
+/// \brief Check if a character is a printable character (ASCII space to
+///        tilde).
+///
+/// \param ch       The character to check.
+///
+/// \return         TRUE if the character is a printable character, FALSE
+///                 otherwise.
+///
+///////////////////////////////////////////////////////////////////////////////
+bool_t my_isprint(int ch);
+
+///////////////////////////////////////////////////////////////////////////////
+/// \brief Check if a character is a punctuation character.
+///
+/// \param ch       The character to check.
+///
+/// \return         TRUE if the character is a punctuation character, FALSE
+///                 otherwise.
+///
+///////////////////////////////////////////////////////////////////////////////
+bool_t my_ispunct(int ch);
+
+///////////////////////////////////////////////////////////////////////////////
+/// \brief Check if a character is a whitespace character (tab, newline,
+///        vertical tab, form feed, carriage return, or space).
+///
+/// \param ch       The character to check.
+///
+/// \return         TRUE if the character is a whitespace character, FALSE
+///                 otherwise.
+///
+///////////////////////////////////////////////////////////////////////////////
+bool_t my_isspace(int ch);
+
+///////////////////////////////////////////////////////////////////////////////
+/// \brief Check if a character is a uppercase letter.
+///
+/// \param ch       The character to check.
+///
+/// \return         TRUE if the character is a uppercase letter, FALSE
+///                 otherwise.
+///
+///////////////////////////////////////////////////////////////////////////////
+bool_t my_isupper(int ch);
+
+///////////////////////////////////////////////////////////////////////////////
+/// \brief Check if a character is a hexadecimal digit.
+///
+/// \param ch       The character to check.
+///
+/// \return         TRUE if the character is a hexadecimal digit, FALSE
+///                 otherwise.
+///
+///////////////////////////////////////////////////////////////////////////////
+bool_t my_isxdigit(int ch);
+
+///////////////////////////////////////////////////////////////////////////////
+/// \brief Convert an uppercase letter to its lowercase equivalent.
+///
+/// \param ch       The character to convert.
+///
+/// \return         The lowercase equivalent if the character is an uppercase
+///                 letter, unchanged otherwise.
+///
+///////////////////////////////////////////////////////////////////////////////
+int my_tolower(int ch);
+
+///////////////////////////////////////////////////////////////////////////////
+/// \brief Convert an uppercase letter to its uppercase equivalent.
+///
+/// \param ch       The character to convert.
+///
+/// \return         The uppercase equivalent if the character is an lowercase
+///                 letter, unchanged otherwise.
+///
+///////////////////////////////////////////////////////////////////////////////
+int my_toupper(int ch);
+
+#endif /* !MY_CHAR_H_ */
