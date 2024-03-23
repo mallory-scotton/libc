@@ -112,17 +112,6 @@ void my_bcopy(const void *s1, void *s2, ulong_t n);
 void *my_realloc(void *ptr, ulong_t size);
 
 ///////////////////////////////////////////////////////////////////////////////
-/// \brief Check if the sign bit is set in the representation of a double.
-///
-/// \param nd           The double to check.
-///
-/// \return             TRUE if the sign bit is set (negative), FALSE
-///                     otherwise.
-///
-///////////////////////////////////////////////////////////////////////////////
-bool_t my_signbit(double nd);
-
-///////////////////////////////////////////////////////////////////////////////
 /// \brief Sets a block of memory to the specified value.
 ///
 /// \param dst          Pointer to the memory area to be set.

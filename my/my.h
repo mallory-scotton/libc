@@ -39,6 +39,7 @@
 #endif
     #include "char/char.h"
     #include "memory/memory.h"
+    #include "maths/maths.h"
 
 ///////////////////////////////////////////////////////////////////////////////
 //                                -----------
@@ -49,7 +50,6 @@
     #define EXIT_FAILURE 84
     #undef EXIT_SUCCESS
     #define EXIT_SUCCESS 0
-    #define PI 3.14159265358979323846
 #ifndef NULL
     #define NULL (void *)0
 #endif
@@ -120,18 +120,6 @@ typedef struct buffer_s {
     #define TVEC2F(v) ((vec2f_t){(float)((v).x), (float)((v).y)})
     #define TVEC2I(v) ((vec2i_t){(int)((v).x), (int)((v).y)})
     #define TVEC2U(v) ((vec2u_t){(uint_t)((v).x), (uint_t)((v).y)})
-    #define MAX(a, b) ((a) > (b) ? (a) : (b))
-    #define MIN(a, b) ((a) < (b) ? (a) : (b))
-    #define LERP(a, b, t) ((a) * (1 - t) + (b) * (t))
-    #define CLAMP01(x) (((x) < 0) ? 0 : (((x) > 1) ? 1 : (x)))
-    #define CLAMP(x, mi, ma) ((x) < (mi) ? (mi) : ((x) > (ma) ? (ma) : (x)))
-    #define ABS(x) ((x) < 0 ? -(x) : (x))
-    #define FABS(x) ((x) < 0.0f ? -(x) : (x))
-    #define CUBE(x) ((x) * (x) * (x))
-    #define SQUARE(x) ((x) * (x))
-    #define MIN3(a, b, c) MIN(MIN((a), (b)), (c))
-    #define MAX3(a, b, c) MAX(MAX((a), (b)), (c))
-    #define MID(x, y) (((x) - (y)) / 2)
     #define BOOL(c) ((c) ? TRUE : FALSE)
 
 #endif /* !MY_H_ */
