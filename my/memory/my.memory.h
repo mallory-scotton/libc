@@ -146,4 +146,17 @@ void *my_memset(void *dst0, int c0, ulong_t length);
 ///////////////////////////////////////////////////////////////////////////////
 int my_memcmp(const void *s1, const void *s2, ulong_t n);
 
+///////////////////////////////////////////////////////////////////////////////
+/// \brief Calculate the length of a memory block in terms of the number of
+///        elements, where each element has a size of 'size'.
+///
+/// \param ptr          Pointer to the memory block.
+/// \param size         Size of each element in the memory block.
+///
+/// \return             The length of the memory block in terms of the number
+///                     of elements.
+///
+///////////////////////////////////////////////////////////////////////////////
+ulong_t my_memlen(const void *ptr, ulong_t size);
+
 #endif /* !MY_MEMORY_H_ */
