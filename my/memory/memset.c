@@ -74,7 +74,7 @@ static void filling_word(ustring_t dst, int c0, uint_t c, ulong_t length)
 ///////////////////////////////////////////////////////////////////////////////
 void *my_memset(void *dst0, int c0, ulong_t length)
 {
-    uint_t c;
+    uint_t c = (uchar_t)c0;
     ustring_t dst = (ustring_t)dst0;
 
     if (length < 3 * WSIZE) {
@@ -85,7 +85,7 @@ void *my_memset(void *dst0, int c0, ulong_t length)
         }
         return (dst0);
     }
-    if ((c = (uchar_t)c0) != 0) {
+    if (c != 0) {
         c = (c << 8) | c;
         if (UINT_MAX > 0xffff)
             c = (c << 16) | c;
