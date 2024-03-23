@@ -150,9 +150,13 @@ Personal libC recreation
 |Maths|atanh|![](https://img.shields.io/badge/in%20development-yellow) ![](https://img.shields.io/badge/0%20test(s)-red)|
 |Maths|lgamma|![](https://img.shields.io/badge/in%20development-yellow) ![](https://img.shields.io/badge/0%20test(s)-red)|
 |Maths|tgamma|![](https://img.shields.io/badge/in%20development-yellow) ![](https://img.shields.io/badge/0%20test(s)-red)|
-|Maths|ceil|![](https://img.shields.io/badge/in%20development-yellow) ![](https://img.shields.io/badge/0%20test(s)-red)|
-|Maths|floor|![](https://img.shields.io/badge/in%20development-yellow) ![](https://img.shields.io/badge/0%20test(s)-red)|
-|Maths|trunc|![](https://img.shields.io/badge/in%20development-yellow) ![](https://img.shields.io/badge/0%20test(s)-red)|
+|Maths|ceil|![](https://img.shields.io/badge/completed-green) ![](https://img.shields.io/badge/0%20test(s)-red)|
+|Maths|ceilf|![](https://img.shields.io/badge/completed-green) ![](https://img.shields.io/badge/0%20test(s)-red)|
+|Maths|ceill|![](https://img.shields.io/badge/completed-green) ![](https://img.shields.io/badge/0%20test(s)-red)|
+|Maths|floor|![](https://img.shields.io/badge/completed-green) ![](https://img.shields.io/badge/0%20test(s)-red)|
+|Maths|trunc|![](https://img.shields.io/badge/completed-green) ![](https://img.shields.io/badge/0%20test(s)-red)|
+|Maths|truncf|![](https://img.shields.io/badge/completed-green) ![](https://img.shields.io/badge/0%20test(s)-red)|
+|Maths|truncl|![](https://img.shields.io/badge/completed-green) ![](https://img.shields.io/badge/0%20test(s)-red)|
 |Maths|round|![](https://img.shields.io/badge/in%20development-yellow) ![](https://img.shields.io/badge/0%20test(s)-red)|
 |Maths|lround|![](https://img.shields.io/badge/in%20development-yellow) ![](https://img.shields.io/badge/0%20test(s)-red)|
 |Maths|llround|![](https://img.shields.io/badge/in%20development-yellow) ![](https://img.shields.io/badge/0%20test(s)-red)|
@@ -167,7 +171,9 @@ Personal libC recreation
 |Maths|scalbln|![](https://img.shields.io/badge/in%20development-yellow) ![](https://img.shields.io/badge/0%20test(s)-red)|
 |Maths|nextafter|![](https://img.shields.io/badge/in%20development-yellow) ![](https://img.shields.io/badge/0%20test(s)-red)|
 |Maths|nexttoward|![](https://img.shields.io/badge/in%20development-yellow) ![](https://img.shields.io/badge/0%20test(s)-red)|
-|Maths|copysign|![](https://img.shields.io/badge/in%20development-yellow) ![](https://img.shields.io/badge/0%20test(s)-red)|
+|Maths|copysign|![](https://img.shields.io/badge/completed-green) ![](https://img.shields.io/badge/0%20test(s)-red)|
+|Maths|copysignf|![](https://img.shields.io/badge/completed-green) ![](https://img.shields.io/badge/0%20test(s)-red)|
+|Maths|copysignl|![](https://img.shields.io/badge/completed-green) ![](https://img.shields.io/badge/0%20test(s)-red)|
 |Maths|fpclassify|![](https://img.shields.io/badge/in%20development-yellow) ![](https://img.shields.io/badge/0%20test(s)-red)|
 |Maths|isfinite|![](https://img.shields.io/badge/in%20development-yellow) ![](https://img.shields.io/badge/0%20test(s)-red)|
 |Maths|isinf|![](https://img.shields.io/badge/in%20development-yellow) ![](https://img.shields.io/badge/0%20test(s)-red)|
