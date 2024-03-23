@@ -1,0 +1,42 @@
+/*
+** EPITECH PROJECT, 2024
+** libc
+** File description:
+** rand_r
+*/
+
+///////////////////////////////////////////////////////////////////////////////
+// Headers
+///////////////////////////////////////////////////////////////////////////////
+#include "my.h"
+
+///////////////////////////////////////////////////////////////////////////////
+/// \brief Applies the tempering function to a given unsigned integer.
+///
+/// \param x            The unsigned integer to be tempered.
+///
+/// \return             The tempered unsigned integer.
+///
+///////////////////////////////////////////////////////////////////////////////
+static unsigned my_temper(unsigned x)
+{
+    x ^= x >> 11;
+    x ^= x << 7 & 0x9D2C5680;
+    x ^= x << 15 & 0XEFC60000;
+    x ^= x << 18;
+    return (x);
+}
+
+///////////////////////////////////////////////////////////////////////////////
+/// \brief Generates a pseudo-random integer using a seed.
+///
+/// \param seed         A pointer to the seed value.
+///
+/// \return             A pseudo-random integer.
+///
+///////////////////////////////////////////////////////////////////////////////
+int my_rand_r(unsigned *seed)
+{
+    *seed = *seed * 1103515245 + 12345;
+    return (my_temper(*seed) / 2);
+}
