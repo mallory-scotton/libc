@@ -174,4 +174,15 @@ double my_copysign(double x, double y);
 ///////////////////////////////////////////////////////////////////////////////
 float my_copysignf(float x, float y);
 
+///////////////////////////////////////////////////////////////////////////////
+/// \brief Copies sign from 'y' to 'x'.
+///
+/// \param x            The value whose sign will be modified.
+/// \param y            The value from which the sign will be copied.
+///
+/// \return             The value of 'x' with the sign of 'y'.
+///
+///////////////////////////////////////////////////////////////////////////////
+long double my_copysignl(long double x, long double y);
+
 #endif /* !LIBMY_MATHS_H_ */
