@@ -218,4 +218,48 @@ long double my_copysignl(long double x, long double y);
 ///////////////////////////////////////////////////////////////////////////////
 bool_t my_isnan(double x);
 
+///////////////////////////////////////////////////////////////////////////////
+/// \brief Returns the maximum of two double-precision floating-point values.
+///
+/// \param x            The first double-precision floating-point value.
+/// \param y            The second double-precision floating-point value.
+///
+/// \return             The maximum of the two values.
+///
+///////////////////////////////////////////////////////////////////////////////
+double my_fmax(double x, double y);
+
+///////////////////////////////////////////////////////////////////////////////
+/// \brief Returns the maximum of two float-precision floating-point values.
+///
+/// \param x            The first float-precision floating-point value.
+/// \param y            The second float-precision floating-point value.
+///
+/// \return             The maximum of the two values.
+///
+///////////////////////////////////////////////////////////////////////////////
+float my_fmaxf(float x, float y);
+
+///////////////////////////////////////////////////////////////////////////////
+/// \brief Returns the minimum of two double-precision floating-point values.
+///
+/// \param x            The first double-precision floating-point value.
+/// \param y            The second double-precision floating-point value.
+///
+/// \return             The minimum of the two values.
+///
+///////////////////////////////////////////////////////////////////////////////
+double my_fmin(double x, double y);
+
+///////////////////////////////////////////////////////////////////////////////
+/// \brief Returns the minimum of two float-precision floating-point values.
+///
+/// \param x            The first float-precision floating-point value.
+/// \param y            The second float-precision floating-point value.
+///
+/// \return             The minimum of the two values.
+///
+///////////////////////////////////////////////////////////////////////////////
+float my_fminf(float x, float y);
+
 #endif /* !LIBMY_MATHS_H_ */
