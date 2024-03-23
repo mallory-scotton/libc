@@ -2,7 +2,7 @@
 ** EPITECH PROJECT, 2024
 ** LIBMY_MANAGER
 ** File description:
-** my.isupper
+** tolower
 */
 
 ///////////////////////////////////////////////////////////////////////////////
@@ -11,15 +11,15 @@
 #include "my.h"
 
 ///////////////////////////////////////////////////////////////////////////////
-/// \brief Check if a character is a uppercase letter.
+/// \brief Convert an uppercase letter to its lowercase equivalent.
 ///
-/// \param ch       The character to check.
+/// \param ch       The character to convert.
 ///
-/// \return         TRUE if the character is a uppercase letter, FALSE
-///                 otherwise.
+/// \return         The lowercase equivalent if the character is an uppercase
+///                 letter, unchanged otherwise.
 ///
 ///////////////////////////////////////////////////////////////////////////////
-bool_t my_isupper(int ch)
+int my_tolower(int ch)
 {
-    return (BOOL(ch >= 'A' && ch <= 'Z'));
+    return (my_islower(ch) ? (ch + 32) : ch);
 }

@@ -2,7 +2,7 @@
 ** EPITECH PROJECT, 2024
 ** LIBMY_MANAGER
 ** File description:
-** my.isalpha
+** isdigit
 */
 
 ///////////////////////////////////////////////////////////////////////////////
@@ -11,16 +11,15 @@
 #include "my.h"
 
 ///////////////////////////////////////////////////////////////////////////////
-/// \brief Check if a character is an alphabetic character [a-Z].
+/// \brief Check if a character is a control character.
 ///
 /// \param ch       The character to check.
 ///
-/// \return         TRUE if the character is an alphabetic character, FALSE
+/// \return         TRUE if the character is a control character, FALSE
 ///                 otherwise.
 ///
 ///////////////////////////////////////////////////////////////////////////////
-bool_t my_isalpha(int ch)
+bool_t my_iscntrl(int ch)
 {
-    return (BOOL( (ch >= 'a' && ch <= 'z')
-        || (ch >= 'A' && ch <= 'Z')));
+    return (BOOL((ch >= 0 && ch <= 31) || ch == 127));
 }

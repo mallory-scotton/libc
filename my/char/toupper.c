@@ -2,7 +2,7 @@
 ** EPITECH PROJECT, 2024
 ** LIBMY_MANAGER
 ** File description:
-** my.isxdigit
+** toupper
 */
 
 ///////////////////////////////////////////////////////////////////////////////
@@ -11,17 +11,15 @@
 #include "my.h"
 
 ///////////////////////////////////////////////////////////////////////////////
-/// \brief Check if a character is a hexadecimal digit.
+/// \brief Convert an uppercase letter to its uppercase equivalent.
 ///
-/// \param ch       The character to check.
+/// \param ch       The character to convert.
 ///
-/// \return         TRUE if the character is a hexadecimal digit, FALSE
-///                 otherwise.
+/// \return         The uppercase equivalent if the character is an lowercase
+///                 letter, unchanged otherwise.
 ///
 ///////////////////////////////////////////////////////////////////////////////
-bool_t my_isxdigit(int ch)
+int my_toupper(int ch)
 {
-    return (BOOL((ch >= '0' && ch <= '9')
-        || (ch >= 'a' && ch <= 'f')
-        || (ch >= 'A' && ch <= 'F')));
+    return (my_islower(ch) ? (ch - 32) : ch);
 }

@@ -2,7 +2,7 @@
 ** EPITECH PROJECT, 2024
 ** LIBMY_MANAGER
 ** File description:
-** my.memory
+** memory
 */
 
 #ifndef MY_MEMORY_H_
@@ -158,5 +158,17 @@ int my_memcmp(const void *s1, const void *s2, ulong_t n);
 ///
 ///////////////////////////////////////////////////////////////////////////////
 ulong_t my_memlen(const void *ptr, ulong_t size);
+
+///////////////////////////////////////////////////////////////////////////////
+/// \brief Finds the position of the least significant bit set to 1 in a
+///        bitmask.
+///
+/// \param mask         The bitmask to search.
+///
+/// \return             The position of the least significant bit set to 1,
+///                     or 0 if 'mask' is 0.
+///
+///////////////////////////////////////////////////////////////////////////////
+int my_ffs(int mask);
 
 #endif /* !MY_MEMORY_H_ */

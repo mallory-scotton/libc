@@ -2,7 +2,7 @@
 ** EPITECH PROJECT, 2024
 ** LIBMY_MANAGER
 ** File description:
-** my.memmove
+** isgraph
 */
 
 ///////////////////////////////////////////////////////////////////////////////
@@ -11,16 +11,16 @@
 #include "my.h"
 
 ///////////////////////////////////////////////////////////////////////////////
-/// \brief Moves memory area.
+/// \brief Check if a character is a graphical character (printable and not a
+///        space).
 ///
-/// \param s1           Pointer to the destination memory area.
-/// \param s2           Pointer to the source memory area.
-/// \param n            Number of bytes to move.
+/// \param ch       The character to check.
 ///
-/// \return             Pointer to the destination memory area.
+/// \return         TRUE if the character is a graphical character, FALSE
+///                 otherwise.
 ///
 ///////////////////////////////////////////////////////////////////////////////
-void *my_memmove(void *s1, const void *s2, ulong_t n)
+bool_t my_isgraph(int ch)
 {
-    return (my_memcpy(s1, s2, n));
+    return (BOOL(my_isprint(ch) && !my_isspace(ch)));
 }

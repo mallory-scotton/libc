@@ -2,7 +2,7 @@
 ** EPITECH PROJECT, 2024
 ** LIBMY_MANAGER
 ** File description:
-** my.isdigit
+** memmove
 */
 
 ///////////////////////////////////////////////////////////////////////////////
@@ -11,14 +11,16 @@
 #include "my.h"
 
 ///////////////////////////////////////////////////////////////////////////////
-/// \brief Check if a character is a digit [0-9].
+/// \brief Moves memory area.
 ///
-/// \param ch       The character to check.
+/// \param s1           Pointer to the destination memory area.
+/// \param s2           Pointer to the source memory area.
+/// \param n            Number of bytes to move.
 ///
-/// \return         TRUE if the character is a digit, FALSE otherwise.
+/// \return             Pointer to the destination memory area.
 ///
 ///////////////////////////////////////////////////////////////////////////////
-bool_t my_isdigit(int ch)
+void *my_memmove(void *s1, const void *s2, ulong_t n)
 {
-    return (BOOL(ch >= '0' && ch <= '9'));
+    return (my_memcpy(s1, s2, n));
 }

@@ -2,7 +2,7 @@
 ** EPITECH PROJECT, 2024
 ** LIBMY_MANAGER
 ** File description:
-** my.toupper
+** isalnum
 */
 
 ///////////////////////////////////////////////////////////////////////////////
@@ -11,15 +11,14 @@
 #include "my.h"
 
 ///////////////////////////////////////////////////////////////////////////////
-/// \brief Convert an uppercase letter to its uppercase equivalent.
+/// \brief Check if a character is an alphanumeric character [a-Z0-9].
 ///
-/// \param ch       The character to convert.
+/// \param ch       The character to check.
 ///
-/// \return         The uppercase equivalent if the character is an lowercase
-///                 letter, unchanged otherwise.
+/// \return         TRUE if the character is alphanumeric, FALSE otherwise.
 ///
 ///////////////////////////////////////////////////////////////////////////////
-int my_toupper(int ch)
+bool_t my_isalnum(int ch)
 {
-    return (my_islower(ch) ? (ch - 32) : ch);
+    return (BOOL(my_isalpha(ch) || my_isdigit(ch)));
 }

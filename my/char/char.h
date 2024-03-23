@@ -2,7 +2,7 @@
 ** EPITECH PROJECT, 2024
 ** LIBMY_MANAGER
 ** File description:
-** my.char
+** char
 */
 
 #ifndef MY_CHAR_H_

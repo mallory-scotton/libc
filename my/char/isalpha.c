@@ -2,7 +2,7 @@
 ** EPITECH PROJECT, 2024
 ** LIBMY_MANAGER
 ** File description:
-** my.islower
+** isalpha
 */
 
 ///////////////////////////////////////////////////////////////////////////////
@@ -11,15 +11,16 @@
 #include "my.h"
 
 ///////////////////////////////////////////////////////////////////////////////
-/// \brief Check if a character is a lowercase letter.
+/// \brief Check if a character is an alphabetic character [a-Z].
 ///
 /// \param ch       The character to check.
 ///
-/// \return         TRUE if the character is a lowercase letter, FALSE
+/// \return         TRUE if the character is an alphabetic character, FALSE
 ///                 otherwise.
 ///
 ///////////////////////////////////////////////////////////////////////////////
-bool_t my_islower(int ch)
+bool_t my_isalpha(int ch)
 {
-    return (BOOL(ch >= 'a' && ch <= 'z'));
+    return (BOOL( (ch >= 'a' && ch <= 'z')
+        || (ch >= 'A' && ch <= 'Z')));
 }

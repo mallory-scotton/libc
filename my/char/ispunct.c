@@ -2,7 +2,7 @@
 ** EPITECH PROJECT, 2024
 ** LIBMY_MANAGER
 ** File description:
-** my.isalnum
+** ispunct
 */
 
 ///////////////////////////////////////////////////////////////////////////////
@@ -11,14 +11,17 @@
 #include "my.h"
 
 ///////////////////////////////////////////////////////////////////////////////
-/// \brief Check if a character is an alphanumeric character [a-Z0-9].
+/// \brief Check if a character is a punctuation character.
 ///
 /// \param ch       The character to check.
 ///
-/// \return         TRUE if the character is alphanumeric, FALSE otherwise.
+/// \return         TRUE if the character is a punctuation character, FALSE
+///                 otherwise.
 ///
 ///////////////////////////////////////////////////////////////////////////////
-bool_t my_isalnum(int ch)
+bool_t my_ispunct(int ch)
 {
-    return (BOOL(my_isalpha(ch) || my_isdigit(ch)));
+    return (BOOL((ch == '!' || (ch >= '"' && ch <= '&')
+        || (ch >= '(' && ch <= '/') || (ch >= ':' && ch <= '?')
+        || (ch >= '[' && ch <= '`') || (ch >= '{' && ch <= '~'))));
 }

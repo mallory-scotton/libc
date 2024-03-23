@@ -2,7 +2,7 @@
 ** EPITECH PROJECT, 2024
 ** LIBMY_MANAGER
 ** File description:
-** my.isdigit
+** bcopy
 */
 
 ///////////////////////////////////////////////////////////////////////////////
@@ -11,15 +11,14 @@
 #include "my.h"
 
 ///////////////////////////////////////////////////////////////////////////////
-/// \brief Check if a character is a control character.
+/// \brief Copies bytes from source memory area to destination memory area.
 ///
-/// \param ch       The character to check.
-///
-/// \return         TRUE if the character is a control character, FALSE
-///                 otherwise.
+/// \param s1           Pointer to the source memory area.
+/// \param s2           Pointer to the destination memory area.
+/// \param n            Number of bytes to copy.
 ///
 ///////////////////////////////////////////////////////////////////////////////
-bool_t my_iscntrl(int ch)
+void my_bcopy(const void *s1, void *s2, ulong_t n)
 {
-    return (BOOL((ch >= 0 && ch <= 31) || ch == 127));
+    my_memcpy(s2, s1, n);
 }

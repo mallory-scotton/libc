@@ -2,7 +2,7 @@
 ** EPITECH PROJECT, 2024
 ** LIBMY_MANAGER
 ** File description:
-** my.ispunct
+** isdigit
 */
 
 ///////////////////////////////////////////////////////////////////////////////
@@ -11,17 +11,14 @@
 #include "my.h"
 
 ///////////////////////////////////////////////////////////////////////////////
-/// \brief Check if a character is a punctuation character.
+/// \brief Check if a character is a digit [0-9].
 ///
 /// \param ch       The character to check.
 ///
-/// \return         TRUE if the character is a punctuation character, FALSE
-///                 otherwise.
+/// \return         TRUE if the character is a digit, FALSE otherwise.
 ///
 ///////////////////////////////////////////////////////////////////////////////
-bool_t my_ispunct(int ch)
+bool_t my_isdigit(int ch)
 {
-    return (BOOL((ch == '!' || (ch >= '"' && ch <= '&')
-        || (ch >= '(' && ch <= '/') || (ch >= ':' && ch <= '?')
-        || (ch >= '[' && ch <= '`') || (ch >= '{' && ch <= '~'))));
+    return (BOOL(ch >= '0' && ch <= '9'));
 }

@@ -37,8 +37,8 @@
     #include <SFML/Network.h>
     #include <SFML/OpenGL.h>
 #endif
-    #include "char/my.char.h"
-    #include "memory/my.memory.h"
+    #include "char/char.h"
+    #include "memory/memory.h"
 
 ///////////////////////////////////////////////////////////////////////////////
 //                                -----------

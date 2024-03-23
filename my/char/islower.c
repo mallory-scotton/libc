@@ -2,7 +2,7 @@
 ** EPITECH PROJECT, 2024
 ** LIBMY_MANAGER
 ** File description:
-** my.bcopy
+** islower
 */
 
 ///////////////////////////////////////////////////////////////////////////////
@@ -11,14 +11,15 @@
 #include "my.h"
 
 ///////////////////////////////////////////////////////////////////////////////
-/// \brief Copies bytes from source memory area to destination memory area.
+/// \brief Check if a character is a lowercase letter.
 ///
-/// \param s1           Pointer to the source memory area.
-/// \param s2           Pointer to the destination memory area.
-/// \param n            Number of bytes to copy.
+/// \param ch       The character to check.
+///
+/// \return         TRUE if the character is a lowercase letter, FALSE
+///                 otherwise.
 ///
 ///////////////////////////////////////////////////////////////////////////////
-void my_bcopy(const void *s1, void *s2, ulong_t n)
+bool_t my_islower(int ch)
 {
-    my_memcpy(s2, s1, n);
+    return (BOOL(ch >= 'a' && ch <= 'z'));
 }

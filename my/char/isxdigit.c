@@ -2,7 +2,7 @@
 ** EPITECH PROJECT, 2024
 ** LIBMY_MANAGER
 ** File description:
-** my.isgraph
+** isxdigit
 */
 
 ///////////////////////////////////////////////////////////////////////////////
@@ -11,16 +11,17 @@
 #include "my.h"
 
 ///////////////////////////////////////////////////////////////////////////////
-/// \brief Check if a character is a graphical character (printable and not a
-///        space).
+/// \brief Check if a character is a hexadecimal digit.
 ///
 /// \param ch       The character to check.
 ///
-/// \return         TRUE if the character is a graphical character, FALSE
+/// \return         TRUE if the character is a hexadecimal digit, FALSE
 ///                 otherwise.
 ///
 ///////////////////////////////////////////////////////////////////////////////
-bool_t my_isgraph(int ch)
+bool_t my_isxdigit(int ch)
 {
-    return (BOOL(my_isprint(ch) && !my_isspace(ch)));
+    return (BOOL((ch >= '0' && ch <= '9')
+        || (ch >= 'a' && ch <= 'f')
+        || (ch >= 'A' && ch <= 'F')));
 }

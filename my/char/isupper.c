@@ -2,7 +2,7 @@
 ** EPITECH PROJECT, 2024
 ** LIBMY_MANAGER
 ** File description:
-** my.signbit
+** isupper
 */
 
 ///////////////////////////////////////////////////////////////////////////////
@@ -11,18 +11,15 @@
 #include "my.h"
 
 ///////////////////////////////////////////////////////////////////////////////
-/// \brief Check if the sign bit is set in the representation of a double.
+/// \brief Check if a character is a uppercase letter.
 ///
-/// \param nd           The double to check.
+/// \param ch       The character to check.
 ///
-/// \return             TRUE if the sign bit is set (negative), FALSE
-///                     otherwise.
+/// \return         TRUE if the character is a uppercase letter, FALSE
+///                 otherwise.
 ///
 ///////////////////////////////////////////////////////////////////////////////
-bool_t my_signbit(double nd)
+bool_t my_isupper(int ch)
 {
-    ullong_t *ptr = (ullong_t *)&nd;
-    ullong_t bitmask = 0x8000000000000000ULL;
-
-    return (BOOL((*ptr & bitmask) != 0));
+    return (BOOL(ch >= 'A' && ch <= 'Z'));
 }
