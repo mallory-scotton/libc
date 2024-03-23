@@ -208,4 +208,14 @@ float my_copysignf(float x, float y);
 ///////////////////////////////////////////////////////////////////////////////
 long double my_copysignl(long double x, long double y);
 
+///////////////////////////////////////////////////////////////////////////////
+/// \brief Checks if a double-precision floating-point value is NaN.
+///
+/// \param x            The double-precision floating-point value to check.
+///
+/// \return             True if the value is NaN, false otherwise.
+///
+///////////////////////////////////////////////////////////////////////////////
+bool_t my_isnan(double x);
+
 #endif /* !LIBMY_MATHS_H_ */
