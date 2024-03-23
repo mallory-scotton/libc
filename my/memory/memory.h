@@ -29,6 +29,9 @@
 //                                 --------
 ///////////////////////////////////////////////////////////////////////////////
     #define BZERO(ptr, size) my_memset(ptr, 0, size)
+    #define BITOPR(a, b) (a)[(ulong_t)(b) / (8 * sizeof *(a))]
+    #define BITOPL(a, b) (ulong_t)1 << ((ulong_t)(b) % (8 * sizeof *(a)))
+    #define BITOP(a, b, op) (BITOPR(a, b) op BITOPL(a, b))
 
 ///////////////////////////////////////////////////////////////////////////////
 //                                -----------
@@ -170,5 +173,18 @@ ulong_t my_memlen(const void *ptr, ulong_t size);
 ///
 ///////////////////////////////////////////////////////////////////////////////
 int my_ffs(int mask);
+
+///////////////////////////////////////////////////////////////////////////////
+/// \brief Finds the last occurrence of a character in a block of memory.
+///
+/// \param s            A pointer to the memory block to search.
+/// \param c            The character to search for.
+/// \param n            The number of bytes to search.
+///
+/// \return             A pointer to the last occurrence of the character, or
+///                     NULL if not found.
+///
+///////////////////////////////////////////////////////////////////////////////
+void *my_memrchr(const void *s, int c, ulong_t n);
 
 #endif /* !MY_MEMORY_H_ */
