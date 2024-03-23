@@ -40,6 +40,7 @@
     #include "char/char.h"
     #include "memory/memory.h"
     #include "maths/maths.h"
+    #include "random/random.h"
 
 ///////////////////////////////////////////////////////////////////////////////
 //                                -----------
