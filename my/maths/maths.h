@@ -141,4 +141,37 @@ double my_trunc(double x);
 ///////////////////////////////////////////////////////////////////////////////
 float my_truncf(float x);
 
+//////////////////////////////////////////////////////////////////////////////
+/// \brief Computes the nearest integer value to 'x' not greater in magnitude.
+///
+/// \param x            The input value.
+///
+/// \return             The nearest integer value to 'x' not greater in
+///                     magnitude.
+///
+///////////////////////////////////////////////////////////////////////////////
+long double my_truncl(long double x);
+
+///////////////////////////////////////////////////////////////////////////////
+/// \brief Copies sign from 'y' to 'x'.
+///
+/// \param x            The value whose sign will be modified.
+/// \param y            The value from which the sign will be copied.
+///
+/// \return             The value of 'x' with the sign of 'y'.
+///
+///////////////////////////////////////////////////////////////////////////////
+double my_copysign(double x, double y);
+
+///////////////////////////////////////////////////////////////////////////////
+/// \brief Copies sign from 'y' to 'x'.
+///
+/// \param x            The value whose sign will be modified.
+/// \param y            The value from which the sign will be copied.
+///
+/// \return             The value of 'x' with the sign of 'y'.
+///
+///////////////////////////////////////////////////////////////////////////////
+float my_copysignf(float x, float y);
+
 #endif /* !LIBMY_MATHS_H_ */
