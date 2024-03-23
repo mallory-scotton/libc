@@ -1,6 +1,6 @@
 /*
 ** EPITECH PROJECT, 2024
-** LIBMY_MANAGER
+** libc
 ** File description:
 ** tolower
 */
