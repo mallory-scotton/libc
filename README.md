@@ -116,8 +116,10 @@ Personal libC recreation
 |Maths|remainder|![](https://img.shields.io/badge/in%20development-yellow) ![](https://img.shields.io/badge/0%20test(s)-red)|
 |Maths|remquo|![](https://img.shields.io/badge/in%20development-yellow) ![](https://img.shields.io/badge/0%20test(s)-red)|
 |Maths|fma|![](https://img.shields.io/badge/in%20development-yellow) ![](https://img.shields.io/badge/0%20test(s)-red)|
-|Maths|fmax|![](https://img.shields.io/badge/in%20development-yellow) ![](https://img.shields.io/badge/0%20test(s)-red)|
-|Maths|fmin|![](https://img.shields.io/badge/in%20development-yellow) ![](https://img.shields.io/badge/0%20test(s)-red)|
+|Maths|fmax|![](https://img.shields.io/badge/completed-green) ![](https://img.shields.io/badge/0%20test(s)-red)|
+|Maths|fmaxf|![](https://img.shields.io/badge/completed-green) ![](https://img.shields.io/badge/0%20test(s)-red)|
+|Maths|fmin|![](https://img.shields.io/badge/completed-green) ![](https://img.shields.io/badge/0%20test(s)-red)|
+|Maths|fminf|![](https://img.shields.io/badge/completed-green) ![](https://img.shields.io/badge/0%20test(s)-red)|
 |Maths|fdim|![](https://img.shields.io/badge/in%20development-yellow) ![](https://img.shields.io/badge/0%20test(s)-red)|
 |Maths|nan|![](https://img.shields.io/badge/in%20development-yellow) ![](https://img.shields.io/badge/0%20test(s)-red)|
 |Maths|nanf|![](https://img.shields.io/badge/in%20development-yellow) ![](https://img.shields.io/badge/0%20test(s)-red)|
@@ -177,6 +179,6 @@ Personal libC recreation
 |Maths|fpclassify|![](https://img.shields.io/badge/in%20development-yellow) ![](https://img.shields.io/badge/0%20test(s)-red)|
 |Maths|isfinite|![](https://img.shields.io/badge/in%20development-yellow) ![](https://img.shields.io/badge/0%20test(s)-red)|
 |Maths|isinf|![](https://img.shields.io/badge/in%20development-yellow) ![](https://img.shields.io/badge/0%20test(s)-red)|
-|Maths|isnan|![](https://img.shields.io/badge/in%20development-yellow) ![](https://img.shields.io/badge/0%20test(s)-red)|
+|Maths|isnan|![](https://img.shields.io/badge/completed-green) ![](https://img.shields.io/badge/0%20test(s)-red)|
 |Maths|isnormal|![](https://img.shields.io/badge/in%20development-yellow) ![](https://img.shields.io/badge/0%20test(s)-red)|
 |Maths|signbit|![](https://img.shields.io/badge/completed-green) ![](https://img.shields.io/badge/0%20test(s)-red)|
