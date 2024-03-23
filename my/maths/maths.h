@@ -63,6 +63,9 @@ typedef uchar_t u8_t;
 typedef ushort_t u16_t;
 typedef uint_t u32_t;
 typedef ullong_t u64_t;
+typedef short i16_;
+typedef int i32_t;
+typedef long i64_t;
 
 ///////////////////////////////////////////////////////////////////////////////
 //                                 --------
