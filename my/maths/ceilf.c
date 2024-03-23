@@ -2,7 +2,7 @@
 ** EPITECH PROJECT, 2024
 ** libc
 ** File description:
-** ceil
+** ceilf
 */
 
 ///////////////////////////////////////////////////////////////////////////////
@@ -18,23 +18,26 @@
 /// \return             The smallest integer value not less than 'x'.
 ///
 ///////////////////////////////////////////////////////////////////////////////
-double my_ceil(double x)
+float my_ceilf(float x)
 {
     union {
-        double f;
-        u64_t i;
+        float f;
+        u32_t i;
     } u = {x};
-    int e = u.i >> 52 & 0x7ff;
-    double y;
-    const double ieps = (1 / DBL_EPSILON);
+    int e = (int)(u.i >> 23 & 0x7ff) - 0x7f;
+    u32_t m = 0x007fffff >> e;
 
-    if (e >= 0x3ff + 52 || x == 0)
+    if (e >= 23 || (e >= 0 && (u.i & m) == 0))
         return (x);
-    if (u.i >> 63)
-        y = x - ieps + ieps - x;
-    else
-        y = x + ieps - ieps - x;
-    if (e <= 0x3ff - 1)
-        return (u.i >> 63 ? -0.0 : 1);
-    return (y < 0 ? x + y + 1 : x + y);
+    if (e >= 0) {
+        if (u.i >> 31 == 0)
+            u.i += m;
+        u.i &= ~m;
+    } else {
+        if (u.i >> 31)
+            u.f = -0.0;
+        if (!(u.i >> 31) && u.i << 1)
+            u.f = 1.0;
+    }
+    return (u.f);
 }

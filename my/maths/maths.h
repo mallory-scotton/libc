@@ -110,6 +110,26 @@ bool_t my_signbit(double nd);
 double my_ceil(double x);
 
 ///////////////////////////////////////////////////////////////////////////////
+/// \brief Computes the smallest integer value not less than 'x'.
+///
+/// \param x            The input value.
+///
+/// \return             The smallest integer value not less than 'x'.
+///
+///////////////////////////////////////////////////////////////////////////////
+float my_ceilf(float x);
+
+///////////////////////////////////////////////////////////////////////////////
+/// \brief Computes the smallest integer value not less than 'x'.
+///
+/// \param x            The input value.
+///
+/// \return             The smallest integer value not less than 'x'.
+///
+///////////////////////////////////////////////////////////////////////////////
+long double my_ceill(long double x);
+
+///////////////////////////////////////////////////////////////////////////////
 /// \brief Computes the largest integer value not greater than 'x'.
 ///
 /// \param x            The input value.
