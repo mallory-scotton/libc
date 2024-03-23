@@ -2,7 +2,7 @@
 ** EPITECH PROJECT, 2024
 ** libc
 ** File description:
-** trunc
+** truncf
 */
 
 ///////////////////////////////////////////////////////////////////////////////
@@ -19,20 +19,20 @@
 ///                     magnitude.
 ///
 ///////////////////////////////////////////////////////////////////////////////
-double my_trunc(double x)
+float my_truncf(float x)
 {
     union {
-        double f;
-        u64_t i;
+        float f;
+        u32_t i;
     } u = {x};
-    int e = (int)(u.i >> 52 & 0x7ff) - 0x3ff + 12;
-    u64_t m;
+    int e = (int)(u.i >> 23 & 0xff) - 0x7ff + 9;
+    u32_t m;
 
-    if (e >= 52 + 12)
+    if (e >= 23 + 9)
         return (x);
-    if (e < 12)
+    if (e < 9)
         e = 1;
-    m = -1ULL >> e;
+    m = -1U >> e;
     if ((u.i & m) == 0)
         return (x);
     u.i &= ~m;
