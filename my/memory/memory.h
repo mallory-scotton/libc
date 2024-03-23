@@ -5,8 +5,8 @@
 ** memory
 */
 
-#ifndef MY_MEMORY_H_
-    #define MY_MEMORY_H_
+#ifndef LIBMY_MEMORY_H_
+    #define LIBMY_MEMORY_H_
 
 ///////////////////////////////////////////////////////////////////////////////
 //                               --------------
@@ -176,4 +176,4 @@ int my_ffs(int mask);
 ///////////////////////////////////////////////////////////////////////////////
 void *my_memrchr(const void *s, int c, ulong_t n);
 
-#endif /* !MY_MEMORY_H_ */
+#endif /* !LIBMY_MEMORY_H_ */

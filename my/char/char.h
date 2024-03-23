@@ -5,8 +5,8 @@
 ** char
 */
 
-#ifndef MY_CHAR_H_
-    #define MY_CHAR_H_
+#ifndef LIBMY_CHAR_H_
+    #define LIBMY_CHAR_H_
 
 ///////////////////////////////////////////////////////////////////////////////
 //                               --------------
@@ -165,4 +165,4 @@ int my_tolower(int ch);
 ///////////////////////////////////////////////////////////////////////////////
 int my_toupper(int ch);
 
-#endif /* !MY_CHAR_H_ */
+#endif /* !LIBMY_CHAR_H_ */
