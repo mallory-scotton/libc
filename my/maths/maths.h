@@ -119,4 +119,15 @@ double my_ceil(double x);
 ///////////////////////////////////////////////////////////////////////////////
 double my_floor(double x);
 
+///////////////////////////////////////////////////////////////////////////////
+/// \brief Computes the nearest integer value to 'x' not greater in magnitude.
+///
+/// \param x            The input value.
+///
+/// \return             The nearest integer value to 'x' not greater in
+///                     magnitude.
+///
+///////////////////////////////////////////////////////////////////////////////
+double my_trunc(double x);
+
 #endif /* !LIBMY_MATHS_H_ */
