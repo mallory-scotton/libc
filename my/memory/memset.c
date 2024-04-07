@@ -42,7 +42,7 @@ static void filling_remaining_word(ustring_t dst, int c0, ulong_t length)
 ///////////////////////////////////////////////////////////////////////////////
 static void filling_word(ustring_t dst, int c0, uint_t c, ulong_t length)
 {
-    ulong_t t = (int)dst & WMASK;
+    ulong_t t = (unsigned long int)dst & WMASK;
 
     if (t != 0) {
         t = WSIZE - t;
